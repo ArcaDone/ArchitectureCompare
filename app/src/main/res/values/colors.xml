@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#586BA4</color> <!-- Blue Yonder -->
+    <color name="colorPrimaryDark">#324376</color> <!-- Dark Cornflower Blue -->
+    <color name="colorAccent">#F68E5F</color> <!-- Atomic Tangerine -->
+    <color name="colorBittersweet">#F76C5E</color>
+    <color name="colorCadetBlue">#61A0AF</color>
+    <color name="colorSkyBlue">#324376</color>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ddd.architecturecompare.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_mvcFragment"
+            app:destination="@id/mvcFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_mvpFragment"
+            app:destination="@id/mvpFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_mvvmFragment"
+            app:destination="@id/mvvmFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mvcFragment"
+        android:name="com.ddd.architecturecompare.mvc.MvcFragment"
+        android:label="fragment_mvc"
+        tools:layout="@layout/fragment_mvc" >
+        <argument
+            android:name="mvcSearch"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mvpFragment"
+        android:name="com.ddd.architecturecompare.mvp.MvpFragment"
+        android:label="MvpFragment" >
+        <argument
+            android:name="mvpSearch"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mvvmFragment"
+        android:name="com.ddd.architecturecompare.mvvm.MvvmFragment"
+        android:label="MvvmFragment" >
+        <argument
+            android:name="mvvmSearch"
+            app:argType="string" />
+    </fragment>
+</navigation>
